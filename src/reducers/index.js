@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 
 
-
+// Static 
 const songsReducer = () =>{    
     return [
         {title: 'No Scrubs', duration: '4:05'},
@@ -22,6 +22,7 @@ const selectedSongReducer = (selectedSong = null , action) =>{
 
 }
 
+// using combine Reducer to combine all the reducers and export it .
 export default combineReducers({
     songs: songsReducer,
     selectedSong: selectedSongReducer
